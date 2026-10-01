@@ -31,7 +31,7 @@
     document.getElementById('open').href = url;
     document.getElementById('ok').hidden = false;
     location.href = url;
-    setTimeout(function () { try { window.close(); } catch (e) {} }, 2500);
+    // 탭은 자동으로 닫지 않는다 — 처음 쓰는 사람의 크롬 '항상 허용' 확인 창이 함께 사라질 수 있다.
   } else {
     document.getElementById('bad').hidden = false;
   }
